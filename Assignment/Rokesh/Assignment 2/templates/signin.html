@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Sign In</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../static/css/template.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+        crossorigin="anonymous"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
+    </head>
+
+    <body class="body">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mov" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sign In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="login-page">
+        <div class="form">
+          <form class="rounded bg-white shadow py-5 px-4">
+            <h3 class="text-dark fw-bolder fs-4 mb-2">Sign In</h3>
+            <div class="fw-normal text-muted mb-4">
+              New Here?
+              <a
+                href="/signup"
+                class="text-primary fw-bold text-decoration-none"
+                >Create an Account</a
+              >
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+              <i id="eye-icon" class="uil uil-eye-slash" onclick="toggle()"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" />
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+
+              <a
+                href="Forgetpass.html"
+                class="text"
+                style="color: #0d6efd; text-decoration: none"
+                >Forgot password?</a
+              >
+            </div>
+            <button type="submit" class="btn btn-primary submit_btn w-100 my-4">
+              Continue
+            </button>
+            <div class="text-center text-muted text-uppercase mb-3">or</div>
+            <button type="button" href="/signup">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        const toggle = function () {
+          const passwordElement = document.getElementById("floatingPassword");
+          const eyeIconElement = document.getElementById("eye-icon");
+          if (passwordElement.type === "password") {
+            passwordElement.type = "text";
+            eyeIconElement.classList.replace("uil-eye-slash", "uil-eye");
+          } else {
+            passwordElement.type = "password";
+            eyeIconElement.classList.replace("uil-eye", "uil-eye-slash");
+          }
+        };
+      </script>
+    </body>
+  </html></html
+>
