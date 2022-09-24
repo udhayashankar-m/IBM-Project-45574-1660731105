@@ -1,0 +1,183 @@
+<html lang="en">
+  <html>
+    <head>
+      <title>Sign Up</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../static/css/template.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+        crossorigin="anonymous"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+    </head>
+
+    <body class="body">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mov" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signin">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="login-page">
+        <div class="form">
+          <form class="rounded bg-white shadow p-5">
+            <h3 class="text-dark fw-bolder fs-4 mb-2">Create an Account</h3>
+
+            <div class="fw-normal text-muted mb-2">
+              Already have an account?
+              <a
+                href="/signin"
+                class="text-primary fw-bold text-decoration-none"
+                >Sign in here</a
+              >
+            </div>
+            <div class="text-center text-muted text-uppercase mb-2">or</div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingFirstName"
+                placeholder="name@example.com"
+              />
+              <label for="floatingFirstName">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingLastName"
+                placeholder="name@example.com"
+              />
+              <label for="floatingLastName">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="roll Number"
+              />
+              <label for="floatingInput">Roll Number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="username"
+              />
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+              <span class="password-info mt-2"
+                >Use 8 or more characters with a mix of letters, numbers &
+                symbols.</span
+              >
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="checkbox"
+                style="width: 10%; margin-right: 10px"
+              />
+              <label class="form-check-label ms-2" for="checkbox">
+                I Agree <a href="#">Terms and conditions</a>.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary submit_btn w-100 my-4"
+              >Continue</button
+            >
+          </form>
+        </div>
+      </div>
+    </body>
+    <script>
+      const toggle = function () {
+        const passwordElement = document.getElementById("floatingPassword");
+        const eyeIconElement = document.getElementById("eye-icon");
+        if (passwordElement.type === "password") {
+          passwordElement.type = "text";
+          eyeIconElement.classList.replace("uil-eye-slash", "uil-eye");
+        } else {
+          passwordElement.type = "password";
+          eyeIconElement.classList.replace("uil-eye", "uil-eye-slash");
+        }
+      };
+    </script>
+  </html>
+</html>
