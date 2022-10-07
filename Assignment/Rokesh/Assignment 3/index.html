@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>About page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.css"
+    />
+  </head>
+
+  <body>
+    <div id="images">
+      <img
+        src="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/inventory.png"
+        alt="image 1"
+      />
+      Sample Image 1
+      <img
+        src="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/inventory2.jpg"
+        alt="Image 2"
+      />
+      Sample Image 2
+      <img
+        src="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/inventory3.jpg"
+        alt="Image 3"
+      />
+      Sample Image 3
+      <img
+        src="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/inventory4.jpg"
+        alt="Image 4"
+      />
+      Sample Image 4
+      <img
+        src="https://roki7324.s3.jp-tok.cloud-object-storage.appdomain.cloud/inventory5.jpg"
+        alt="Image 5"
+      />
+      Sample Image 5
+    </div>
+  </body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "87a6eaac-2364-499d-990c-7cc97c6578a2", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "d9c0d015-9638-4ea7-a98e-1788a1e26577", // The ID of your service instance.
+      onLoad: function (instance) {
+        instance.render();
+      },
+    };
+    setTimeout(function () {
+      const t = document.createElement("script");
+      t.src =
+        "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || "latest") +
+        "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
