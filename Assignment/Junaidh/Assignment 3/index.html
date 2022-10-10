@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>About page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/index.css"
+    />
+  </head>
+
+<body>
+<div id="images">
+      <img
+        src="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-10%20at%2010.23.24%20AM.jpeg"
+        alt="image 1"
+      />
+      Sample Image 1
+      <img
+        src="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-10%20at%2010.23.25%20AM%20(2).jpeg"
+    
+        alt="Image 1"
+      />
+      Sample Image 2
+      <img
+        src="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-10%20at%2010.23.25%20AM.jpeg"
+        alt="Image 2"
+      />
+      Sample Image 3
+      <img
+        src="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-10%20at%2010.23.26%20AM.jpeg"
+        alt="Image 3"
+      />
+      Sample Image 4
+      <img
+        src="https://learnibm.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-10%20at%2010.23.42%20AM.jpeg"
+        alt="Image 4"
+      />
+      Sample Image 5
+      
+    </div>
+  </body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "d513b0ba-a11d-46c4-a580-e8928368fd3c", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "99544904-26d5-4747-a172-5c7b2a94e88d", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
